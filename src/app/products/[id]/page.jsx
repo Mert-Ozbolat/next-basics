@@ -3,9 +3,10 @@ import React from 'react'
 
 
 
-export const generateMetadata = ({ params }) => {
+export const generateMetadata = async ({ params }) => {
+    const id = (await params).id;
     return {
-        title: params.id + " id'li ürünün detayı"
+        title: id + " id'li ürünün detayı"
     }
 }
 
