@@ -2,6 +2,12 @@ import Link from 'next/link'
 import React from 'react'
 
 
+export const metadata = {
+    title: "Ürünler",
+    description: "En iyi ürünlerr",
+};
+
+
 const Product = () => {
     return (
         <div>

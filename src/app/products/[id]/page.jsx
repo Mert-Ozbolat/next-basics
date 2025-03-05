@@ -1,12 +1,17 @@
 import Link from 'next/link';
 import React from 'react'
 
+
+
+export const generateMetadata = ({ params }) => {
+    return {
+        title: params.id + " id'li ürünün detayı"
+    }
+}
+
+
 const Detail = async ({ params }) => {
-
-    console.log('Parametreler', params)
-
     const id = (await params).id;
-
     return (
         <div>
             <Link className='mt-20' href='.'>Geri dön</Link>
